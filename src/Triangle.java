@@ -1,16 +1,22 @@
 public class Triangle extends Shape {
 	
 	private double height;
+    private double base;
 	
-	public Triangle(double height){
+	public Triangle(double height,double base){
 		this.height = height;
+        this.base = base
 	}
-	
-	
+    public double getBase() {
+        return base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
 	@Override
 	public double getArea() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    return (base/2.0) * height/2.0;
+    }
 
 }

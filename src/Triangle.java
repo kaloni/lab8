@@ -5,7 +5,7 @@ public class Triangle extends Shape {
 	
 	public Triangle(double height,double base){
 		this.height = height;
-        this.base = base
+        this.base = base;
 	}
     public double getBase() {
         return base;
@@ -16,7 +16,7 @@ public class Triangle extends Shape {
     }
 	@Override
 	public double getArea() {
-    return (base/2.0) * height/2.0;
+    return base * height/2.0;
     }
 
 }
